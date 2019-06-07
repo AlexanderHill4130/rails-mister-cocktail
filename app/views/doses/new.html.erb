@@ -1,0 +1,6 @@
+<h1>New dose</h1>
+<%= simple_form_for [cocktail, dose] do |a| %>
+  <%= a.association :ingredient, input_html: { class: "beautiful-dropdown" } %>
+  <%= a.input :description %>
+  <%= a.button :submit, class: "btn btn-danger" %>
+<% end %>
